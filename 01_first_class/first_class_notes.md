@@ -144,3 +144,21 @@
 - A linear layer (also called a fully connected or dense layer) is a matrix multiplication followed by a bias addition.
 
   > In transformers, a linear layer is a fully connected layer used for transforming token embeddings through matrix multiplication and bias addition. It's used throughout the model — to project inputs into queries, keys, and values for self-attention, to combine multi-head outputs, and inside the feed-forward network. These layers help the model learn deep representations and map internal states to the output vocabulary during generation.
+
+#### Softmax :-
+
+- Softmax selects what to choose from the probabilities of next word or answer.
+- It always selects which has highest probability.
+
+  - When I ask "Who built ChatGPT?", 
+  - the model:
+    - Computes probabilities for all possible next tokens using softmax.
+    - Most likely tokens might be: "OpenAI", "Google", "Elon", etc.
+    - Softmax assigns the highest score to "OpenAI", because that fits the context best.
+    - So, the model generates:
+    - "ChatGPT was built by OpenAI."
+
+#### temperature :-
+
+- When we set tempertaure we cann actually said to chatgpt how to communicate like as a chati batti yaar or a khadoos principal of school.
+- When we set temperture as 100 it communicate like free or frank but in case of 0 it gives us one word answer.

@@ -8,4 +8,4 @@ print('Tokenized ', tokens)
 
 # get actual text from decode data
 get_text = encoder.decode(tokens)
-print("Original text ", get_text)
+print("Original text :- ", get_text)

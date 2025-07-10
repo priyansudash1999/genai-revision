@@ -51,3 +51,16 @@
     > Based on this it creates a token which value should be 7
 
   #### INST Prompt:-
+
+  - An INST prompt (short for "instruction prompt") is similar in spirit to prompts used for instruction-tuned models (like Alpaca) but can be adapted to your own style
+
+    ##### Prompt format:-
+
+    [INST] Hello [/INST]
+
+    - These tokens enclose user messages in multi turn conversations.
+
+    System message:-
+    <<SYS>> Hi <</SYS>> :- Enclos system message
+
+  #### ChatML:-

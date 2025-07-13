@@ -31,7 +31,7 @@ result = client.chat.completions.create(
   temperature=1,
   messages=[
         {"role": "system", "content": system_prompt},
-        {"role": "user", "content": "What is orange?"}
+        {"role": "user", "content": "What is orange ?"}
     ]
 )
 

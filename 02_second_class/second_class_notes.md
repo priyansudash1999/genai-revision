@@ -175,3 +175,14 @@
 #### 6. Persona based Prompting:-
 
 - The model is instructed to respond as if it were a particular character of profession.
+
+#### 7. Role based Prompting:-
+
+- We assign a role to AI so the context should be narrow.
+- It can focus on one thing only.
+
+- Example:- You are an AI assistant who is professional in coding only. You can answer any coding question.
+
+#### Contextual Prompting :-
+
+#### Multimodal Prompting :-

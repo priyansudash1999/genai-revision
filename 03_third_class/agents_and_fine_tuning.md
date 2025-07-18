@@ -1,0 +1,3 @@
+- When we have brain and not other parts we can only think, can not do anything.
+  - Only brains = llm
+  - brain + body parts = agent

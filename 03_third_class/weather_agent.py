@@ -18,7 +18,7 @@ def get_weather(city):
   return "something went wrong"
 
 def get_date(city):
-    print("Tool called: ", city)
+    print("Tool called: get date", city)
     url = f"https://timeapi.io/api/time/current/zone?timeZone=Asia%2F{city}"
     response = requests.get(url)
     if response.status_code != 200:
@@ -77,6 +77,14 @@ system_prompt = """
   Output:- {"step": "action", "content": "get_weather", "input": "Puri"}
   Output:- {{"step": "observe", "content": "18th July 2025"}}
   Output: {{"step": "output", "content": "It is 18th July 2025 in Puri Jagannath, Odisha, India, Asia"}}
+
+  Example 3:-
+  User query:- What is weather and date in Puri, Odisha, India ?
+  Output:- {{"step": "analyse", "content": "The user is interested in weather data of Puri Jagannath, Odisha, India"}}
+  Output:- {{"step": "plan", "content": "From the availabe tools I should call get_weather for weather data and get_date for date"}}
+  Output:- {{"step": "action", "content": "get_weather", "get_date", "input", "Puri"}}
+  Output:- {{"step": "observe", "content": "12 degree celsius and 18th July 2025"}}
+  Output: {{"step": "output", "content": "It is 12 degree celsius in Puri Jagannath, Odisha, India and It is very good for travelling and today is Friday and date is 18th July 2025"}}
 """
 while True:
   user_query = input("> ")

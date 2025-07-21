@@ -161,4 +161,23 @@
 
   ```
 
-#### 2. LoRA :-
+#### 2. **LoRA** :-
+
+- It stands for Low-Rank Adaption
+- It is a parameter-efficient-finetuning technique for LLMs.
+- Full parameter fine tuning update all the weights in base model but LoRA focuses on tracking changes by adding low-rank decomposition matrices to the model's weight.
+- It freezes base model parameter.
+
+- Advantages:-
+  - Faster Training
+  - Memory Efficient
+  - Storage Efficient
+  - Model Reusability
+  - Preserves Original Knowledge
+  - Cheaper to Train
+- Disadvantages:-
+  - Limited Adaptation Capacity
+  - Requires Adapter Management
+  - Less Effective than Full Tuning (sometimes)
+  - Needs Framework Support
+  - May struggle with generalization
